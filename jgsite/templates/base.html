@@ -13,9 +13,13 @@
   </head>
   <body>
   	{% block body %}
-	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+	<nav class="navbar navbar-expand-sm navbar-light bg-light">
 	  <div class="container">
-	    <a class="navbar-brand" href="{% url 'boards:home' %}">Django Boards</a>
+	    
+		<a class="navbar-brand" href="{% url 'boards:home' %}">
+		  <img src="{% static 'img/ti-logo-text.svg' %}" width="315" height="50" alt="Tributary Income">
+		</a>	    
+	    
 	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
