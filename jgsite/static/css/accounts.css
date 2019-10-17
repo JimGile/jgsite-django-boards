@@ -1,9 +1,12 @@
 body {
-  background-image: url(../img/gravel.png);
+  background: rgb(246, 246, 246);
+  font-family: 'Roboto', sans-serif;
 }
 
 .logo {
   font-family: 'Peralta', cursive;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Average', serif;
 }
 
 .logo a {

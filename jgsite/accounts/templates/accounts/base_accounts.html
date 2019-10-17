@@ -9,9 +9,15 @@
 {% block body %}
   <div class="container">
     <h1 class="text-center logo my-4">
-      <a href="{% url 'boards:home' %}">Django Boards</a>
+      <a class="navbar-brand" href="{% url 'boards:home' %}">
+		<img src="{% static 'img/ti-logo-text.svg' %}" width="315" height="50" alt="Tributary Income">
+	  </a>	    
     </h1>
-    {% block content %}
-    {% endblock %}
+    <div class="row justify-content-center">
+      <div class="col-lg-5 col-md-7 col-sm-9">
+        {% block content %}
+        {% endblock %}
+      </div>
+    </div>
   </div>
 {% endblock %}
